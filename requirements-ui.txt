@@ -1,0 +1,3 @@
+# Установить в уже существующую .venv CPS-PredDiag.
+# pandas / numpy / pyarrow / scikit-learn / joblib должны оставаться из основного окружения.
+streamlit>=1.40,<2

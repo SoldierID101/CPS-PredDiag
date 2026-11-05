@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "dataset": "Petrobras 3W Dataset v2.0.0",
+  "event_class": 2,
+  "approval_status": "draft",
+  "description": "Числовые диагностические пороги не подтверждены. Исследовательские гипотезы по трендам DHSV см. в docs/diagnostic_rules.md. Данный файл не содержит исполняемых правил.",
+  "rules": []
+}

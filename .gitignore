@@ -1,0 +1,77 @@
+# CPS-PredDiag: source code and docs only by default.
+# Python environments, caches, local editor state
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Runtime configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*secret*.json
+*credentials*.json
+secrets/
+private/
+
+# Petrobras and other datasets (keep outside Git)
+dataset/
+datasets/
+data/
+raw_data/
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+
+# Generated outputs / logs / export files
+outputs/
+output/
+results/
+artifacts/
+runs/
+logs/
+*.csv
+*.tsv
+*.jsonl
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Model weights / serialization
+models/
+checkpoints/
+*.cbm
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+
+# OS and notebooks with unreviewed outputs
+.DS_Store
+Thumbs.db
+*.ipynb
+
+# Explicitly review and stage exceptions one by one if needed.
