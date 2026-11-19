@@ -1,0 +1,43 @@
+{
+  "experiment": "class2_nested_alert_policy_v0.1_exploratory",
+  "models": [
+    "logreg",
+    "random_forest",
+    "catboost",
+    "lightgbm"
+  ],
+  "source_cohort_sha256": "bc0697ddc674aa44b3b5eeea212b7474db64356c9563b73408972e9c19d10c99",
+  "source_oof_sha256": "7d79a3f5183c9576459639f529f0d13834ce9d0dd182dabd2ac9ba353811870f",
+  "n_windows_per_model": 503,
+  "n_wells": 7,
+  "num_events": 11,
+  "threshold_grid": [
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "confirmations_grid": [
+    1,
+    2
+  ],
+  "inner_target_event_recall": 0.8,
+  "inner_models_retrained": true,
+  "outer_models_retrained": false,
+  "outer_scores_frozen_from_benchmark": true,
+  "controls_evaluated": false,
+  "limitations": [
+    "Exploratory: wells already repeatedly examined",
+    "No control specificity in these outputs; requires identical control features for ALL models",
+    "Event recall counts active alert within 30m, not necessarily a new alarm start",
+    "Policy selection minimizes negative-window activity only on inner LOOW data",
+    "No confidence intervals or independent industrial FAR"
+  ]
+}
