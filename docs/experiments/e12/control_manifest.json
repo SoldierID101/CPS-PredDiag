@@ -1,0 +1,28 @@
+{
+  "experiment": "class2_control_specificity_v0.1_exploratory",
+  "cohort_sha256": "bc0697ddc674aa44b3b5eeea212b7474db64356c9563b73408972e9c19d10c99",
+  "oof_sha256": "7d79a3f5183c9576459639f529f0d13834ce9d0dd182dabd2ac9ba353811870f",
+  "control_index_sha256": "7d386378504cd85d54a31f8d79271661cfe2d8c1aee7dee57c914cc1ca69421e",
+  "models": [
+    "logreg",
+    "random_forest",
+    "catboost",
+    "lightgbm"
+  ],
+  "n_control_wells": 9,
+  "n_control_files": 23,
+  "n_control_windows": 4056,
+  "data_root": "dataset",
+  "control_features_from_raw": true,
+  "control_target_used_to_fit": false,
+  "control_target_used_to_tune": false,
+  "threshold_tuned_on_class2_loow": true,
+  "scope": "Preselected eligible negative windows in control-only wells",
+  "limitations": [
+    "Control-only wells have been examined previously: NOT independent final validation",
+    "No hard negative retraining in this experiment",
+    "Sampled eligible negative hours are NOT full industrial uptime or field FAR",
+    "Control index selection inherited from earlier audited experiment; generalize cautiously",
+    "Full-fit model controls and LOOW class2 have different training-set sizes"
+  ]
+}

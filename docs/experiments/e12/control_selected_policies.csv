@@ -1,0 +1,5 @@
+model,threshold,confirmations,inner_event_recall,inner_goal_reached
+logreg,0.8,1,0.8181818181818182,True
+random_forest,0.4,1,0.8181818181818182,True
+catboost,0.2,2,0.8181818181818182,True
+lightgbm,0.6,2,0.8181818181818182,True
